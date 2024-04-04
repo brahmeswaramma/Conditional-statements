@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Nested_if statements</h1>
+        {% if a > b and a > c and a > d %}
+           {% if a > d %}
+                <h2>a is max</h2>
+            {% else %}
+                <h2>d is big</h2>
+            {% endif %}
+        {% else %}
+            {% if c > d %}
+                <h2>b is big</h2>
+            {% else %}
+                <h1>c is max</h1>
+            {% endif %}
+        {% endif%}
+            
+
+        
+    </center>
+</body>
+</html>
